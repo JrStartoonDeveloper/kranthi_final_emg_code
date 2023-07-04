@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar_bodypart"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:elevation="@dimen/toolbar_dim_5"
+        android:background="@color/white_opaque"
+        tools:ignore="MissingConstraints,ObsoleteLayoutParam">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="2dp"
+                android:id="@+id/iv_back_app_info"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:src="@drawable/green_back_arrow"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Report Screen"
+                android:gravity="center|left"
+                android:textSize="20sp"
+                android:textColor="@color/good_green"
+                android:layout_gravity="center"
+                android:paddingStart="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/button_bluetooth"
+                android:layout_width="110dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:drawableStart="@drawable/black_print_icon"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/white"
+                android:text="Print"
+                style="@style/pheezee_normal"
+                android:textAllCaps="false"
+                android:textColor="@color/good_green"
+                android:textSize="@dimen/btn_text" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/button_bluetooth_disable"
+                android:layout_width="110dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:drawableStart="@drawable/mid_new_printer"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/white"
+                android:text="Print"
+                style="@style/pheezee_normal"
+                android:textAllCaps="false"
+                android:textColor="@color/dull_color"
+                android:textSize="@dimen/btn_text" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:background="@color/white"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/scrollable_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/black">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:padding="10dp"
+                    android:src="@drawable/icon_new_thermal"
+                    android:scaleType="centerCrop"
+                    />
+
+
+
+                <TextView
+                    android:paddingLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center"
+                    android:fontFamily="@font/ebrima"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:text="Pheezee EMG"/>
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Physio Email :"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/ebrima"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:fontFamily="@font/ebrima"
+                    android:id="@+id/pt_email_rt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:fontFamily="@font/ebrima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Patient Name :"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:fontFamily="@font/ebrima"
+                    android:id="@+id/patient_name_rt"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:fontFamily="@font/ebrima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Patient ID :"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:fontFamily="@font/ebrima"
+                    android:id="@+id/patient_id_rt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp">
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/emgChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="650dp" />
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btn_generate_pdf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/good_green"
+                android:text="Generate PDF"
+                android:textColor="#FFFFFF" />
+
+            <!-- Add more views as needed -->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
